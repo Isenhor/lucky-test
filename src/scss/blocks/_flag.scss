@@ -1,0 +1,70 @@
+.img-flag {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  outline: 10px solid #fff;
+  border-radius: 50%;
+  transition: 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img__flag--hidden {
+  left: 50% !important;
+  top: 50% !important;
+}
+
+.img-flag--mini {
+  background-image: url("/img/flag-mini.webp");
+  width: 30px;
+  height: 30px;
+  animation-delay: 0.4s;
+}
+
+.img-flag--sm {
+  background-image: url("/img/flag-sm.webp");
+  width: 40px;
+  height: 40px;
+  animation-delay: 0.8s;
+}
+
+.img-flag--med {
+  background-image: url("/img/flag-med.webp");
+  width: 50px;
+  height: 50px;
+  animation-delay: 1.2s;
+}
+
+.img-flag--large {
+  background-image: url("/img/flag-large.webp");
+  width: 60px;
+  height: 60px;
+  animation-delay: 1.6s;
+}
+
+.img-flag--one {
+  left: 1%;
+  top: 61%;
+}
+
+.img-flag--two {
+  left: 99%;
+  top: 61%;
+}
+
+.img-flag--three {
+  left: 54%;
+  top: 0;
+}
+
+.img-flag--four {
+  left: 94%;
+  top: 28%;
+}
+
+.img-flag--five {
+  left: 6%;
+  top: 26%;
+}

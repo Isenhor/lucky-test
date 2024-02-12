@@ -1,0 +1,137 @@
+.hero {
+  padding-top: 85px;
+  padding-bottom: 54px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: $site-bgc;
+
+  @include desktop {
+    padding-top: 40px;
+  }
+
+  @include mobile {
+    padding: 30px 0;
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+.hero__content {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  max-width: 597px;
+
+  &-text {
+    margin-bottom: 30px;
+    max-width: 444px;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.73;
+    color: #7c7c7c;
+
+    @include desktop {
+      margin-bottom: 16px;
+    }
+  }
+
+  @include tablet-big {
+    margin: 0 auto;
+  }
+}
+
+.main-title {
+  margin-bottom: 10px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.35;
+  color: $text-base;
+  @include desktop {
+    font-size: 42px;
+  }
+
+  @include mobile {
+    font-size: 28px;
+  }
+}
+
+.btn--slim {
+  margin-bottom: 50px;
+
+  @include desktop {
+    margin-bottom: 16px;
+  }
+}
+
+.hero__img {
+  width: 836px;
+  position: absolute;
+  bottom: -54px;
+  left: 46%;
+
+  @include desktop {
+    width: 590px;
+    transform: translateY(30%);
+    left: 51%;
+  }
+
+  @include tablet-big {
+    display: none;
+  }
+}
+
+.hero__img-bg {
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__img-circle {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.animate {
+  animation: spinAnimation 8s infinite linear;
+}
+
+@keyframes spinAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero__img-center {
+  position: relative;
+  height: 557px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: #48b774;
+  }
+
+  & img {
+    position: relative;
+    z-index: 3;
+  }
+}

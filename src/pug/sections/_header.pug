@@ -1,0 +1,26 @@
+header.header
+	.container
+		.header__content.flex
+			.logo.flex
+				.logo__img 
+					img(src="./img/logo.svg", alt="Logo Image")
+				.logo__text
+					a(href="index.html") Global 
+			.main-menu 
+				nav#menu.nav
+					ul.nav__list.flex 
+						li.nav__list-item 
+							a(href="#!").nav__list-link.nav__list-link--active Mobile Top Up
+						li.nav__list-item 
+							a(href="#!").nav__list-link About
+						li.nav__list-item 
+							a(href="#!").nav__list-link Rate
+						li.nav__list-item 
+							a(href="#!").nav__list-link Help
+							//-кнопка для мобильного меню
+						li.nav__list-item 
+							button(type="submit").btn.signup.signup--mobile Sign Up
+				//-бургер
+				button.burger(type='button')
+					span.burger-bar
+			button(type="submit").btn.signup Sign Up

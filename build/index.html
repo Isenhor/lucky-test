@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--====убрать синий цвет у ссылок в сафари ========-->
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Page</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content flex">
+        <div class="logo flex">
+          <div class="logo__img">
+            <img src="./img/logo.svg" alt="Logo Image">
+          </div>
+          <div class="logo__text">
+            <a href="index.html">Global </a>
+          </div>
+        </div>
+        <div class="main-menu">
+          <nav class="nav" id="menu">
+            <ul class="nav__list flex">
+              <li class="nav__list-item">
+                <a class="nav__list-link nav__list-link--active" href="#!">Mobile Top Up</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#!">About</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#!">Rate</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#!">Help</a>
+              </li>
+              <li class="nav__list-item">
+                <button class="btn signup signup--mobile" type="submit">Sign Up</button>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger" type="button">
+            <span class="burger-bar"></span>
+          </button>
+        </div>
+        <button class="btn signup" type="submit">Sign Up</button>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="main-title">Now Buy Your
+          <br>PIN or <span class="accent">Top Up </span>
+          <br>With Bank Transfer
+        </h1>
+        <p class="hero__content-text"></p>
+        <button class="btn btn--slim">Get Started</button>
+        <form class="search" action="#">
+          <input class="search__input" id="searchInput" type="text" minlength="4" maxlength="12" placeholder="Where do you want to call?">
+          <button class="search__button">
+            <svg class="svg-search">
+              <use href="./img/spriteSvg.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="hero__content-users">
+          <div class="users flex">
+            <div class="users__avatar flex">
+              <div class="users__avatar-item users__avatar-item--plus">
+                <svg class="svg-plus">
+                  <use href="./img/spriteSvg.svg#plus"></use>
+                </svg>
+              </div>
+              <div class="users__avatar-item">
+                <img src="./img/user-3.webp" alt="user">
+              </div>
+              <div class="users__avatar-item">
+                <img src="./img/user-2.webp" alt="user">
+              </div>
+              <div class="users__avatar-item">
+                <img src="./img/user-1.webp" alt="user">
+              </div>
+            </div>
+            <div class="users__info">45k+ Regular User. <a class="accent" href="#">View Price Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__img">
+        <div class="hero__img-bg">
+          <div class="hero__img-circle">
+            <img src="./img/circle.svg" width="450" height="450" alt="img">
+            <div class="img-flag img-flag--mini img-flag--one img__flag--hidden"></div>
+            <div class="img-flag img-flag--large img-flag--five img__flag--hidden"></div>
+            <div class="img-flag img-flag--sm img-flag--three img__flag--hidden"></div>
+            <div class="img-flag img-flag--med img-flag--four img__flag--hidden"></div>
+            <div class="img-flag img-flag--mini img-flag--two img__flag--hidden"></div>
+          </div>
+        </div>
+        <div class="hero__img-center">
+          <img src="./img/hero-img.webp" alt="Section image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=============== мои скрипты ===================	-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+section.hero
+	.container 
+		.hero__content 
+			h1.main-title Now Buy Your
+				br
+				| PIN or 
+				span.accent Top Up 
+				br
+				| With Bank Transfer
+			p.hero__content-text
+			button.btn.btn--slim Get Started
+			form.search(action="#")
+				input#searchInput.search__input(type="text" minlength="4" maxlength="12" placeholder="Where do you want to call?")
+				button.search__button
+					svg.svg-search 
+						use(href="./img/spriteSvg.svg#search")
+			.hero__content-users
+				.users.flex
+					.users__avatar.flex
+						.users__avatar-item.users__avatar-item--plus
+							svg.svg-plus
+								use(href="./img/spriteSvg.svg#plus")
+						.users__avatar-item
+							img(src="./img/user-3.webp", alt="user")
+						.users__avatar-item
+							img(src="./img/user-2.webp", alt="user")
+						.users__avatar-item
+							img(src="./img/user-1.webp", alt="user")
+						
+					.users__info
+						| 45k+ Regular User. 
+						a(href="#").accent View Price Plan
+		.hero__img
+			.hero__img-bg
+				.hero__img-circle
+					img(src="./img/circle.svg", width="450", height="450", alt="img")
+					.img-flag.img-flag--mini.img-flag--one.img__flag--hidden
+					.img-flag.img-flag--large.img-flag--five.img__flag--hidden
+					.img-flag.img-flag--sm.img-flag--three.img__flag--hidden
+					.img-flag.img-flag--med.img-flag--four.img__flag--hidden
+					.img-flag.img-flag--mini.img-flag--two.img__flag--hidden
+			.hero__img-center
+				img(src="./img/hero-img.webp", alt="Section image")

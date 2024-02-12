@@ -1,0 +1,37 @@
+.btn {
+  font-family: $font-family;
+  font-weight: 500;
+  color: $light-text;
+  font-size: 15px;
+  background-color: $btn-color;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  &:active {
+    background-color: $btn-active;
+  }
+}
+
+.signup {
+  padding: 9px 23px;
+  border-radius: 20px;
+  @include tablet {
+    display: none;
+  }
+}
+
+.signup--mobile {
+  display: none;
+  @include tablet {
+    display: inline-block;
+  }
+}
+
+.btn--slim{
+  border-radius: 30px;
+  padding: 11px 22px;
+}
